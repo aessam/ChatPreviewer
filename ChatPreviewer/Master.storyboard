@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="NKG-Vd-3n4">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="rFv-L6-Xcn">
+            <objects>
+                <viewController id="NKG-Vd-3n4" customClass="ViewController" customModule="ChatPreviewer" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="4c1-j0-oz9"/>
+                        <viewControllerLayoutGuide type="bottom" id="JT3-mW-jKh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3W9-UZ-dxV">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" horizontalHuggingPriority="249" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="input text to process" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5sN-gV-5Ce">
+                                <rect key="frame" x="10" y="20" width="582" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="done"/>
+                            </textField>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D4V-aj-Ixb">
+                                <rect key="frame" x="28" y="58" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="fxQ-Sl-AA1"/>
+                                </constraints>
+                                <state key="normal" title="Case 1"/>
+                                <connections>
+                                    <action selector="setCase:" destination="NKG-Vd-3n4" eventType="touchUpInside" id="a2O-JF-Bst"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vn3-yu-xW4">
+                                <rect key="frame" x="84" y="58" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="q0h-R5-WI0"/>
+                                </constraints>
+                                <state key="normal" title="Case 2"/>
+                                <connections>
+                                    <action selector="setCase:" destination="NKG-Vd-3n4" eventType="touchUpInside" id="eSZ-fv-Ube"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="djo-To-Ked">
+                                <rect key="frame" x="140" y="58" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="GtG-dV-UEX"/>
+                                </constraints>
+                                <state key="normal" title="Case 3"/>
+                                <connections>
+                                    <action selector="setCase:" destination="NKG-Vd-3n4" eventType="touchUpInside" id="zxo-B6-oFf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhg-Hi-a6g">
+                                <rect key="frame" x="196" y="58" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="35v-0g-ggk"/>
+                                </constraints>
+                                <state key="normal" title="Case 4"/>
+                                <connections>
+                                    <action selector="setCase:" destination="NKG-Vd-3n4" eventType="touchUpInside" id="2wx-3k-sgZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HLI-aZ-1un">
+                                <rect key="frame" x="544" y="58" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="hpG-GE-AQf"/>
+                                </constraints>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="process:" destination="NKG-Vd-3n4" eventType="touchUpInside" id="dQf-Qb-Nan"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4x5-jn-d19">
+                                <rect key="frame" x="252" y="58" width="48" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Btu-FZ-0pn"/>
+                                </constraints>
+                                <state key="normal" title="Case 5"/>
+                                <connections>
+                                    <action selector="setCase:" destination="NKG-Vd-3n4" eventType="touchUpInside" id="IjC-Yx-Czf"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="8oa-Z0-s0L">
+                                <rect key="frame" x="10" y="91" width="582" height="501"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="5sN-gV-5Ce" firstAttribute="top" secondItem="4c1-j0-oz9" secondAttribute="bottom" id="0hq-Nq-8ZA"/>
+                            <constraint firstItem="8oa-Z0-s0L" firstAttribute="top" secondItem="5sN-gV-5Ce" secondAttribute="bottom" constant="41" id="2dk-kN-FyN"/>
+                            <constraint firstItem="vn3-yu-xW4" firstAttribute="width" secondItem="D4V-aj-Ixb" secondAttribute="width" id="5f8-PZ-bTL"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="8oa-Z0-s0L" secondAttribute="trailing" constant="-12" id="Ax9-LJ-3A5"/>
+                            <constraint firstItem="vn3-yu-xW4" firstAttribute="leading" secondItem="D4V-aj-Ixb" secondAttribute="trailing" constant="8" symbolic="YES" id="BIu-hG-qgp"/>
+                            <constraint firstItem="4x5-jn-d19" firstAttribute="top" secondItem="5sN-gV-5Ce" secondAttribute="bottom" constant="8" id="HUK-yu-KGq"/>
+                            <constraint firstItem="HLI-aZ-1un" firstAttribute="top" secondItem="5sN-gV-5Ce" secondAttribute="bottom" constant="8" id="IA7-Qp-pCO"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="HLI-aZ-1un" secondAttribute="trailing" constant="-12" id="Mhv-RT-iqz"/>
+                            <constraint firstItem="vn3-yu-xW4" firstAttribute="top" secondItem="5sN-gV-5Ce" secondAttribute="bottom" constant="8" id="O8a-Ov-rB5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5sN-gV-5Ce" secondAttribute="trailing" constant="-12" id="OiQ-xM-wBb"/>
+                            <constraint firstItem="djo-To-Ked" firstAttribute="leading" secondItem="vn3-yu-xW4" secondAttribute="trailing" constant="8" symbolic="YES" id="VeW-4g-7wy"/>
+                            <constraint firstItem="5sN-gV-5Ce" firstAttribute="leading" secondItem="3W9-UZ-dxV" secondAttribute="leadingMargin" constant="-10" id="YVx-iY-x2g"/>
+                            <constraint firstItem="4x5-jn-d19" firstAttribute="leading" secondItem="rhg-Hi-a6g" secondAttribute="trailing" constant="8" symbolic="YES" id="aXK-gw-77g"/>
+                            <constraint firstItem="8oa-Z0-s0L" firstAttribute="leading" secondItem="3W9-UZ-dxV" secondAttribute="leadingMargin" constant="-10" id="alw-Ny-Ck5"/>
+                            <constraint firstItem="rhg-Hi-a6g" firstAttribute="leading" secondItem="djo-To-Ked" secondAttribute="trailing" constant="8" symbolic="YES" id="c3p-Al-011"/>
+                            <constraint firstItem="djo-To-Ked" firstAttribute="top" secondItem="5sN-gV-5Ce" secondAttribute="bottom" constant="8" id="cxM-KJ-rKG"/>
+                            <constraint firstItem="JT3-mW-jKh" firstAttribute="top" secondItem="8oa-Z0-s0L" secondAttribute="bottom" constant="8" id="hf5-JA-s7Q"/>
+                            <constraint firstItem="D4V-aj-Ixb" firstAttribute="leading" secondItem="3W9-UZ-dxV" secondAttribute="leadingMargin" constant="8" id="nr1-Kd-VBT"/>
+                            <constraint firstItem="D4V-aj-Ixb" firstAttribute="top" secondItem="5sN-gV-5Ce" secondAttribute="bottom" constant="8" id="qjx-27-qsz"/>
+                            <constraint firstItem="rhg-Hi-a6g" firstAttribute="top" secondItem="5sN-gV-5Ce" secondAttribute="bottom" constant="8" id="tXy-kL-kBS"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="input" destination="5sN-gV-5Ce" id="Scp-Du-lgJ"/>
+                        <outlet property="process" destination="HLI-aZ-1un" id="MnZ-1c-x6E"/>
+                        <outlet property="result" destination="8oa-Z0-s0L" id="6B6-ag-nca"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fSx-Jg-iCJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="345" y="400"/>
+        </scene>
+    </scenes>
+</document>
