@@ -12,9 +12,9 @@ Return (string):
 }
  
 -
-Input: "Good morning! (megusta) (coffee)"
+*Input*: "Good morning! (megusta) (coffee)"
 
-Return (string):
+*Return (string)*:
 {
   "emoticons": [
     "megusta",
@@ -23,8 +23,9 @@ Return (string):
 }
 
 -
-Input: "Olympics are starting soon; http://www.nbcolympics.com"
-Return (string):
+*Input*: "Olympics are starting soon; http://www.nbcolympics.com"
+
+*Return (string)*:
 {
   "links": [
     {
@@ -35,8 +36,9 @@ Return (string):
 }
  
 -
-Input: "@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016"
-Return (string):
+*Input*: "@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016"
+
+*Return (string)*:
 {
   "mentions": [
     "bob",
