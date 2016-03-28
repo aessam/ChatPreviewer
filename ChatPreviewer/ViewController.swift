@@ -40,7 +40,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
         }
         return formated
     }
-    func processInputText(){
+    func processInputText(ui_block: (String, String)->Void){
         
         // This is a quick and dirty viewer for the output.
         
@@ -85,16 +85,9 @@ class ViewController: UIViewController, UITextFieldDelegate{
         } catch let error as NSError {
             toPrintOutput = error.description
         }
-        weak var wself = self
-        dispatch_async(dispatch_get_main_queue(), {
-            wself!.result?.text = toPrintOutput
-            wself!.process.enabled = true
-            do{
-                let attrStr = try NSAttributedString(data: toViewHTML.dataUsingEncoding(NSUTF8StringEncoding)!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
-                wself!.play?.attributedText = attrStr
-            }catch _{
-                
-            }
+
+        dispatch_async(dispatch_get_main_queue(),{
+            ui_block(toPrintOutput, toViewHTML)
         })
     }
     func textFieldShouldReturn(textField: UITextField) -> Bool{
@@ -106,7 +99,16 @@ class ViewController: UIViewController, UITextFieldDelegate{
         process.enabled = false
         weak var wself = self
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), {
-            wself!.processInputText()
+            wself!.processInputText({
+                wself!.result?.text = $0
+                wself!.process.enabled = true
+                do{
+                    let attrStr = try NSAttributedString(data: $1.dataUsingEncoding(NSUTF8StringEncoding)!, options: [NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType], documentAttributes: nil)
+                    wself!.play?.attributedText = attrStr
+                }catch _{
+                    
+                }
+            })
         })
         
 

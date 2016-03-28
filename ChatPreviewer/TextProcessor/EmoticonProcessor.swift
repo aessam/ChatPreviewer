@@ -4,7 +4,12 @@
 //
 //  Created by Ahmed Essam on 3/26/16.
 //  Copyright © 2016 Ahmed Essam. All rights reserved.
+
 //
+// The way it works by defining certain set of emoticons and concatinate
+// it, so the regular expression looks for ( x | y | z ), it is like
+// big array of ors, this to avoid unsupported text like (shongabewzas)
+// which has no emoticon or doesn't mean anything.
 
 import Foundation
 

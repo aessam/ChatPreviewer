@@ -13,6 +13,7 @@ class HTMLTitleProcessor: TextProcessorExtension {
         return "<title>(.+?)</title>"
     }
     func matchFound(fonudText :String) -> AnyObject?{
+        // This to cut the HTML tags and have the clean Title
         let range = Range(fonudText.startIndex.advancedBy(7)...fonudText.endIndex.advancedBy(-9))
         return fonudText.substringWithRange(range)
     }

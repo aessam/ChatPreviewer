@@ -6,6 +6,12 @@
 //  Copyright © 2016 Ahmed Essam. All rights reserved.
 //
 
+
+// This Processor is somehow excpetional, part of the requrement is to get the 
+// Title of the URL, so in order to do that, when finding a match, a request to 
+// server with URL is being done and the recived Text will be processed in 
+// another processor that work with HTML extensions only.
+
 import Foundation
 
 class URLProcessor: TextProcessorExtension {

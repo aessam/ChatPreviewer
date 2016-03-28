@@ -55,34 +55,57 @@ Return (string):
   ]
 }
 
+___
+
+#Here is the module logic
+- TextProcessor is Observer, each specific text processor should be registered to get notified when a Text is being processed.
+- TextProcessExtension is the protocol used.
+
+I have added 
+- MentionsProcessor
+- HashtagProcessor
+- EmoticonProcessor
+- URLProcessor
+
+Because it is required to have the URL title, I had to add a new layer which is fetching the URL page and parse it to extract Title + FB Preview elements (Image and Description), accordingly I develop more extensions for it
+- HTMLTitleProcessor
+- HTMLImageProcessor
+- HTMLDescriptionProcessor
+
+So When the URLProcessor finds URL it initiate page download and creates its own TextProcessor with different extensions registered (HTML****Processors)
+
+The result is Dictionary that contains key for each processor and array of what is found.
+
+
+
 -
 
 
 <p align="center">
-    <img src="images/emoticon.PNG" alt="Screenshots"/>
+    <img style="width: 320px" src="images/emoticon.PNG" alt="Screenshots"/>
 	<p align="center">Emoticon</p>
 </p>
 <p align="center">
-    <img src="images/mention.PNG" alt="Screenshots"/>
+    <img style="width: 320px" src="images/mention.PNG" alt="Screenshots"/>
 	<p align="center">Mentions</p>
 </p>
 
 <p align="center">
-    <img src="images/url.PNG" alt="Screenshots"/>
+    <img style="width: 320px" src="images/url.PNG" alt="Screenshots"/>
 	<p align="center">URL</p>
 </p>
 
 <p align="center">
-    <img src="images/mention-emoticon-url.PNG" alt="Screenshots"/>
+    <img style="width: 320px" src="images/mention-emoticon-url.PNG" alt="Screenshots"/>
 	<p align="center">Mentions, emoticon and URL</p>
 </p>
 
 <p align="center">
-    <img src="images/all.PNG" alt="Screenshots"/>
+    <img style="width: 320px" src="images/all.PNG" alt="Screenshots"/>
 	<p align="center">Hashtags, Mentions, emoticon and URL </p>
 </p>
 
 <p align="center">
-    <img src="images/test-cases.PNG" alt="Screenshots"/>
+    <img style="width: 320px" src="images/test-cases.PNG" alt="Screenshots"/>
 	<p align="center">Test cases </p>
 </p>

@@ -13,6 +13,13 @@ class HTMLDescriptionProcessor: TextProcessorExtension {
         return "<meta property=[\"']og:description[\"'] content=[\"'](.+?)[\"'](.+?)>"
     }
     func matchFound(fonudText :String) -> AnyObject?{
+        // This one is a big tricky, sometimes single quote is used sometimes double
+        // qoute is used, so what I did to get the value of "content", is to split
+        // from content= and take the second part, then split by double quote, if it
+        // worked then fine and take teh value in second item, if not split by single
+        // quote and get the seocnd time because values will be 'value', when split it
+        // will be ["","value", ""]
+        
         var parts = fonudText.componentsSeparatedByString("content=")
         if parts.count>=2 {
             parts = parts[1].componentsSeparatedByString("\"")

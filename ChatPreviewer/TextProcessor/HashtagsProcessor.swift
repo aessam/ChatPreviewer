@@ -13,6 +13,8 @@ class HashtagsProcessor: TextProcessorExtension {
         return "\\S*#\\w+"
     }
     func matchFound(fonudText :String) -> AnyObject?{
+        // Making sure that the incoming match starts with @, the regular
+        // expression used will get text that has @ in the middle of it
         if fonudText.hasPrefix("#"){
             return fonudText.substringFromIndex(fonudText.startIndex.advancedBy(1))
         }
