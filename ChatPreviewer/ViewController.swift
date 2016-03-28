@@ -12,7 +12,11 @@ class ViewController: UIViewController, UITextFieldDelegate{
     
     @IBOutlet weak var process: UIButton!
     @IBOutlet weak var result: UITextView!
-    @IBOutlet weak var input: UITextField!
+    @IBOutlet weak var input: UITextField!{
+        didSet{
+            input.delegate = self
+        }
+    }
     @IBAction func setCase(sender: UIButton) {
         var cases = ["@chris you around?","Good morning! (megusta) (coffee)",
                      "Olympics are starting soon; http://www.nbcolympics.com",
@@ -44,7 +48,10 @@ class ViewController: UIViewController, UITextFieldDelegate{
             wself!.result?.text = toPrintOutput
             wself!.process.enabled = true
         })
-        
+    }
+    func textFieldShouldReturn(textField: UITextField) -> Bool{
+        textField.resignFirstResponder()
+        return false
     }
     @IBAction func process(sender: AnyObject) {
         self.result?.text = "Please wait while fitching URL info"
