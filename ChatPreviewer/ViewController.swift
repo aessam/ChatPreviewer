@@ -21,7 +21,7 @@ class ViewController: UIViewController, UITextFieldDelegate{
     @IBAction func setCase(sender: UIButton) {
         var cases = ["@chris you around?","Good morning! (megusta) (coffee)",
                      "Olympics are starting soon; http://www.nbcolympics.com",
-                     "@bob @john (success) such a cool feature; https://twitter.com/jdorfman/status/430511497475670016",
+                     "@bob @john (success) such a #cool feature; https://twitter.com/jdorfman/status/430511497475670016",
                      "@ahmed check http://nbcolympics.com and lets have some #fun (bicepright)"]
         let index = sender.tag
         if 1...cases.count~=index{

@@ -56,3 +56,33 @@ Return (string):
 }
 
 -
+
+
+<p align="center">
+    <img src="images/emoticon.PNG" alt="Screenshots"/>
+	<p align="center">Emoticon</p>
+</p>
+<p align="center">
+    <img src="images/mention.PNG" alt="Screenshots"/>
+	<p align="center">Mentions</p>
+</p>
+
+<p align="center">
+    <img src="images/url.PNG" alt="Screenshots"/>
+	<p align="center">URL</p>
+</p>
+
+<p align="center">
+    <img src="images/mention-emoticon-url.PNG" alt="Screenshots"/>
+	<p align="center">Mentions, emoticon and URL</p>
+</p>
+
+<p align="center">
+    <img src="images/all.PNG" alt="Screenshots"/>
+	<p align="center">Hashtags, Mentions, emoticon and URL </p>
+</p>
+
+<p align="center">
+    <img src="images/test-cases.PNG" alt="Screenshots"/>
+	<p align="center">Test cases </p>
+</p>
