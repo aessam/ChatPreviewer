@@ -15,7 +15,7 @@ class EmoticonProcessor: TextProcessorExtension {
                     "awesome", "awthanks", "aww", "awwyiss",
                     "awyeah", "badass", "badjokeeel", "badpokerface",
                     "badtime", "bamboo", "basket", "beer",
-                    "bicepleft", "bicepright", "megusta", "coffee"]
+                    "bicepleft", "bicepright", "megusta", "coffee", "success"]
         
         return "\\((" + emos.joinWithSeparator("|") + ")?\\)"
     }
