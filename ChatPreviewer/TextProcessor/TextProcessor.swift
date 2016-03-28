@@ -44,6 +44,11 @@ public class TextProcessor: NSObject {
                     }
                 }
             })
+            
+            if let foundItems = foundEntities[processor.0] as? Array<String>{
+                let foundItemsAsSet = Set<String>(foundItems)
+                foundEntities[processor.0] = Array<String>(foundItemsAsSet)
+            }
         }
         return foundEntities
     }
