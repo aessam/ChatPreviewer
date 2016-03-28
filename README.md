@@ -82,30 +82,30 @@ The result is Dictionary that contains key for each processor and array of what 
 
 
 <p align="center">
-    <img style="width: 320px" src="images/emoticon.PNG" alt="Screenshots"/>
+    <img width=320 src="images/emoticon.PNG" alt="Screenshots"/>
 	<p align="center">Emoticon</p>
 </p>
 <p align="center">
-    <img style="width: 320px" src="images/mention.PNG" alt="Screenshots"/>
+    <img width=320 src="images/mention.PNG" alt="Screenshots"/>
 	<p align="center">Mentions</p>
 </p>
 
 <p align="center">
-    <img style="width: 320px" src="images/url.PNG" alt="Screenshots"/>
+    <img width=320 src="images/url.PNG" alt="Screenshots"/>
 	<p align="center">URL</p>
 </p>
 
 <p align="center">
-    <img style="width: 320px" src="images/mention-emoticon-url.PNG" alt="Screenshots"/>
+    <img width=320 src="images/mention-emoticon-url.PNG" alt="Screenshots"/>
 	<p align="center">Mentions, emoticon and URL</p>
 </p>
 
 <p align="center">
-    <img style="width: 320px" src="images/all.PNG" alt="Screenshots"/>
+    <img width=320 src="images/all.PNG" alt="Screenshots"/>
 	<p align="center">Hashtags, Mentions, emoticon and URL </p>
 </p>
 
 <p align="center">
-    <img style="width: 320px" src="images/test-cases.PNG" alt="Screenshots"/>
+    <img width=320 src="images/test-cases.PNG" alt="Screenshots"/>
 	<p align="center">Test cases </p>
 </p>
