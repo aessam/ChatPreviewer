@@ -83,29 +83,29 @@ The result is Dictionary that contains key for each processor and array of what 
 
 <div style="display: inline-block">
     <img width=320 src="images/emoticon.PNG" alt="Screenshots"/>
-	<p align="center">Emoticon</p>
+	<div align="center">Emoticon</div>
 </div>
 <div style="display: inline-block">
     <img width=320 src="images/mention.PNG" alt="Screenshots"/>
-	<p align="center">Mentions</p>
+	<div align="center">Mentions</div>
 </div>
 
 <div style="display: inline-block">
     <img width=320 src="images/url.PNG" alt="Screenshots"/>
-	<p align="center">URL</p>
+	<div align="center">URL</div>
 </div>
 
 <div style="display: inline-block">
     <img width=320 src="images/mention-emoticon-url.PNG" alt="Screenshots"/>
-	<p align="center">Mentions, emoticon and URL</p>
+	<div align="center">Mentions, emoticon and URL</div>
 </div>
 
 <div style="display: inline-block">
     <img width=320 src="images/all.PNG" alt="Screenshots"/>
-	<p align="center">Hashtags, Mentions, emoticon and URL </p>
+	<div align="center">Hashtags, Mentions, emoticon and URL </div>
 </div>
 
 <div style="display: inline-block">
     <img width=320 src="images/test-cases.PNG" alt="Screenshots"/>
-	<p align="center">Test cases </p>
+	<div align="center">Test cases </div>
 </div>
