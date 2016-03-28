@@ -39,18 +39,19 @@ class ViewController: UIViewController, UITextFieldDelegate{
         } catch let error as NSError {
             toPrintOutput = error.description
         }
-        
+        weak var wself = self
         dispatch_async(dispatch_get_main_queue(), {
-            self.result?.text = toPrintOutput
-            self.process.enabled = true
+            wself!.result?.text = toPrintOutput
+            wself!.process.enabled = true
         })
         
     }
     @IBAction func process(sender: AnyObject) {
         self.result?.text = "Please wait while fitching URL info"
         process.enabled = false
+        weak var wself = self
         dispatch_async(dispatch_get_global_queue(QOS_CLASS_BACKGROUND, 0), {
-            self.processInputText()
+            wself!.processInputText()
         })
         
 
